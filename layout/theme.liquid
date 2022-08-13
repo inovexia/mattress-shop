@@ -7,6 +7,7 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
     {{ 'styleguide.css' | asset_url | stylesheet_tag }}
     {{ 'global.css' | asset_url | stylesheet_tag }}
     {{ 'header.css' | asset_url | stylesheet_tag }}
@@ -40,6 +41,7 @@
 
     <script src="https://use.fontawesome.com/b8e558519d.js"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
     {%- liquid
