@@ -35,6 +35,11 @@
     align-items: center;
     justify-content: space-between;
   }
+  .middle-header .header-cta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
   
 }
 
@@ -67,23 +72,20 @@
   .middle-header {
     background-color: #535353;
     color: #fff;
+    padding: 10px 0px;
   }
 
-  .middle-header .list-menu {
+  .bottom-header .list-menu {
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .middle-header .list-menu li a{
-    color: #fff;
-  }
-
-  .bottom-header .list-menu li {
-    margin: 0;
-  }
-
-  .bottom-header .list-menu li a {
+  .bottom-header .list-menu li a{
+    color: #535353;
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 500;
     padding: 0;
   }
 }
