@@ -1,0 +1,228 @@
+@media (min-width: 0) {
+    
+      /* Basic Styling */
+    
+      html,
+      body {
+        margin: 0;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 24px;
+        font-style: normal;
+        font-weight: 500;
+        overflow-x: hidden;
+        color: #535353;
+      }
+    
+      /* TYPOGRAPHY */
+      .text-color-white{
+        color: #ffffff;
+      }
+      .text-color-dark-light{
+        color: #535353;
+      }
+      .text-color-dark{
+        color: #000000;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6{
+        margin: 0px 0px 8px 0px;
+      }
+      p {
+        margin: 0px;
+      }
+    
+      h1 {
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 24px;
+        font-style: normal;
+        line-height: 28.13px;
+      }
+    
+      h2 {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 32px;
+        font-style: normal;
+        line-height:39px;
+      }
+    
+      h3 {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 24px;
+        font-style: normal;
+        line-height:36px;
+      }
+    
+      h4 {
+        font-family: 'Montserrat';
+        font-weight:500;
+        font-size: 24px;
+        font-style: normal;
+        line-height: 36px;
+      }
+    
+      h5 {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 22px;
+        font-style: normal;
+        line-height: 28px;
+      }
+    
+      h6 {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 24px;
+      }
+    
+      p {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 24px;
+      }
+    
+      a:focus,
+      a:active {
+        outline: none;
+      }
+    
+      table {
+        width: 100%;
+      }
+      .button-primary{
+        padding: 12px 20px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #fff;
+        background-color:#FF5C7B;
+        border: 1px solid #FF5C7B;
+        transition: all 0.3s;
+      }
+      .button-primary:hover{
+        background-color: #fff;
+        color: #FF5C7B
+      }
+      .button-primary-rounded{
+        padding: 12px 20px;
+        border-radius: 32px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #fff;
+        background-color:#FF5C7B;
+        border: 1px solid #FF5C7B;
+        transition: all 0.3s;
+      }
+      .button-primary-rounded:hover{
+        background-color: #fff;
+        color: #FF5C7B
+      }
+    
+      /* FORMS AND BUTTONS */
+      input {
+        background-color: transparent;
+        color: #000000;
+        outline: none;
+      }
+    
+      textarea {
+        background-color: transparent;
+        color: #000000;
+        outline: none;
+      }
+    
+      /* Responsive images */
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    @media (min-width: 768px) {
+    
+      html,
+      body {
+        font-size: 16px;
+        line-height:24px;
+      }
+    
+      /* TYPOGRAPHY */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6{
+        margin: 0px 0px 15px 0px;
+      }
+    
+      h1 {
+        font-size: 40px;
+        line-height: 50.51px;
+      }
+    
+      h2 {
+        font-size: 38px;
+        line-height:46.51px;
+      }
+    
+      h3 {
+        font-size: 36px;
+        line-height:40px;
+      }
+    
+      h4 {
+        font-size: 24px;
+        line-height:36px;
+      }
+    
+      h5 {
+        font-size: 22px;
+        line-height:32px;
+      }
+    
+      h6 {
+        font-size: 20px;
+        line-height:28px;
+      }
+    
+      p {
+        font-size: 16px;
+        line-height:24px;
+      }
+    }
+    
+    @media (min-width:1320px) {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6{
+        margin: 0px 0px 25px 0px;
+      }
+      h1 {
+        font-size: 48px;
+        line-height: 58.51px;
+      }
+    
+      h2 {
+        font-size: 48px;
+        line-height: 58.51px;
+      }
+    
+      h3 {
+        font-size: 40px;
+        line-height: 36px;
+      }
+    }
