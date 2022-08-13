@@ -123,8 +123,8 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
-    <div class="top-header">
+  <header class="header">
+    <div class="top-header w-100">
       <div class="container">
         {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -151,10 +151,10 @@
     {%- endif -%}
       </div>
     </div>
-    <div class="middle-header">
+    <div class="middle-header w-100">
       <div class="container">I am middle header</div>
     </div>
-    <div class="bottom-header">
+    <div class="bottom-header w-100">
       <div class="container">I am bottom header</div>
     </div>
     
