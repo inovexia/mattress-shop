@@ -1,21 +1,99 @@
-@media (min-width:0){
-    body .header {
-        padding: 0;
-        width: 100%;
-        max-width: 100%;
-        margin: 0px auto;
-        display: block;
-      }
-}
-@media (min-width:768px){
+@media (min-width:0) {
+  body .header {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+    display: block;
+  }
+
+  header .field {
+    position: unset;
+    display: flex;
+    align-items: center;
+  }
+
+  header .field:focus-visible,
+  header .field input:focus-visible {
+    outline: none !important;
+    outline-offset: unset;
+    box-shadow: unset;
+  }
+ 
+  .search-box ,.cart-icon{
+    border-left: 2px solid #E6E6E6;
+    border-right: 2px solid #E6E6E6;
+  }
+  .cart-icon {
+    padding: 0px 20px 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .my-account-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   
 }
-@media (min-width:992px){
-  
+
+@media (min-width:768px) {
+  .header-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #shopify-section-announcement-bar {
+    display: none;
+  }
+  .search.search-modal__form img {
+    width: auto;
+    height: 22px;
+    margin-left: 10px;
+  }
+
+  header .middle-header .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .middle-header {
+    background-color: #535353;
+    color: #fff;
+  }
+
+  .middle-header .list-menu {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .middle-header .list-menu li a{
+    color: #fff;
+  }
+
+  .bottom-header .list-menu li {
+    margin: 0;
+  }
+
+  .bottom-header .list-menu li a {
+    padding: 0;
+  }
 }
-@media (min-width:1320px){
-  
+
+@media (min-width:992px) {
+  header .search-modal__form {
+    max-width: 100%;
+  }
 }
-@media (min-width:1600px){
-  
-}
+
+@media (min-width:1320px) {}
+
+@media (min-width:1600px) {}
