@@ -158,6 +158,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "dfa47852-2c75-4c66-958b-7df134bf7f6f": {
+            "type": "html",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/footer-logo.png",
+              "htmltext": "<p class=\"about-us-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida nibh vel velit auctor aliquean sollicitudin, lorem quis bibendum aucto<\/p>"
+            }
+          },
           "footer-1": {
             "type": "link_list",
             "settings": {
@@ -165,41 +172,17 @@
               "menu": "footer"
             }
           },
-          "dfa47852-2c75-4c66-958b-7df134bf7f6f": {
-            "type": "html",
-            "settings": {
-              "title": "Heading",
-              "htmltext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          },
           "f4852dbd-2177-422f-a004-73be93d77bf9": {
             "type": "html",
             "settings": {
-              "title": "Heading",
-              "htmltext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          },
-          "f6eb0740-9f28-46ba-a071-d5cdcab0358b": {
-            "type": "html",
-            "settings": {
-              "title": "Heading",
-              "htmltext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "htmltext": "<h4>Contact Details<\/h4>\n<div class=\"address-details\">\n<a href=\"tel:+91-1234567890\">Call US: +91-1234567890<\/a>\n<a href=\"mailto:Info@abc.com\">Email US: Info@abc.com<\/a>\n<\/div>\n<p>2118 Thornridge Cir. Syracuse, Connecticut 35624<\/p>"
             }
           }
         },
         "block_order": [
-          "footer-1",
           "dfa47852-2c75-4c66-958b-7df134bf7f6f",
-          "f4852dbd-2177-422f-a004-73be93d77bf9",
-          "footer-2",
-          "f6eb0740-9f28-46ba-a071-d5cdcab0358b"
+          "footer-1",
+          "f4852dbd-2177-422f-a004-73be93d77bf9"
         ],
         "settings": {
           "color_scheme": "background-1",
