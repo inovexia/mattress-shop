@@ -62,7 +62,7 @@
                     {{ block.settings.subtext }}
                   </div>
                   {%- when 'html' -%}
-                  <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                  <div class="footer-block__details-content rte">
                     {%- if block.settings.image != blank -%}
                       {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
                       <img
@@ -77,8 +77,6 @@
                     {%- else -%}
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                     {%- endif -%}
-                  </div>
-                  <div class="footer-block__details-content rte">
                     {{ block.settings.htmltext }}
                   </div>
                 {%- when 'link_list' -%}
