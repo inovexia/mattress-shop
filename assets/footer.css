@@ -3,9 +3,65 @@
         background-color: #2A2828;
         color: #fff;
       }
+      footer .section-footer-padding {
+        padding-top: 83px;
+        padding-bottom: 83px;
+        margin: 0;
+      }
+      footer .about-us-text {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        font-family: arial;
+      }
+      footer .footer-block__details-content.rte img {
+        width: 190px;
+      }
+      .about-us-text {
+        max-width: 290px;
+      }
+      .footer-block__heading, .footer-block.grid__item h4 {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 700;
+        color: #fff;
+      }
+      footer .address-details a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 16px;
+        font-size:16px;
+        line-height: 19px;
+        font-weight: 600;
+      }
+      .footer-block__details-content.list-unstyled {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      footer .footer-block__details-content.list-unstyled li{
+        width:46%;
+        text-align: left;
+        margin: 0;
+      }
+      .footer-block__details-content.list-unstyled li a, .footer-block__details-content.list-unstyled li a:hover{
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19.5px;
+        font-weight: 600;
+        color: #fff;
+      }
+
   
 }
 @media (min-width:768px){
+    .about-us-text {
+        max-width: 290px;
+      }
   
 }
 @media (min-width:992px){
