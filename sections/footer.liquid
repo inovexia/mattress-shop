@@ -61,6 +61,10 @@
                   <div class="footer-block__details-content rte">
                     {{ block.settings.subtext }}
                   </div>
+                  {%- when 'html' -%}
+                  <div class="footer-block__details-content rte">
+                    {{ block.settings.htmltext }}
+                  </div>
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
