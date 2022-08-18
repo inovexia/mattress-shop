@@ -185,6 +185,9 @@
     text-transform: uppercase;
     font-weight: 500;
   }
+  .bottom-header .list-menu li a:hover{
+    background-color: transparent;
+  }
   
 }
 
