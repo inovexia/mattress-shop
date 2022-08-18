@@ -78,6 +78,16 @@
       .footer-social a img{
         width: 100%;
       }
+      footer .footer__content-bottom {
+        border-top: none;
+        padding-top:23px;
+      }
+      footer .footer__copyright.caption {
+        margin-top: 0;
+      }
+      .copyright__content a:hover {
+        color: #fff;
+      }
 
   
 }
