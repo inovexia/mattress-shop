@@ -162,7 +162,7 @@
             "type": "html",
             "settings": {
               "image": "shopify:\/\/shop_images\/footer-logo.png",
-              "htmltext": "<p class=\"about-us-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida nibh vel velit auctor aliquean sollicitudin, lorem quis bibendum aucto<\/p>"
+              "htmltext": "<p class=\"about-us-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida nibh vel velit auctor aliquean sollicitudin, lorem quis bibendum aucto<\/p>\n<div class=\"footer-social\">\n<a href=\"\">\n{{ 'facebook-icon.png' | asset_url | img_tag: 'hamburger Icon' }}\n<\/a>\n<\/div>"
             }
           },
           "footer-1": {
