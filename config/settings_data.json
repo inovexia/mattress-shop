@@ -162,7 +162,7 @@
             "type": "html",
             "settings": {
               "image": "shopify:\/\/shop_images\/footer-logo.png",
-              "htmltext": "<p class=\"about-us-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida nibh vel velit auctor aliquean sollicitudin, lorem quis bibendum aucto<\/p>\n<div class=\"footer-social\">\n<a href=\"\">\n{{ 'facebook-icon.png' | asset_url | img_tag: 'hamburger Icon' }}\n<\/a>\n<\/div>"
+              "htmltext": "<p class=\"about-us-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida nibh vel velit auctor aliquean sollicitudin, lorem quis bibendum aucto<\/p>\n<div class=\"footer-social\">\n<a href=\"\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0657\/7940\/0929\/files\/facebook-icon.png?v=1660838308\" alt=\"facebook icon\">\n<\/a>\n<a href=\"\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0657\/7940\/0929\/files\/Instagram-icon.png?v=1660838308\" alt=\"Instagram icon\">\n<\/a>\n<a href=\"\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0657\/7940\/0929\/files\/Twitter-icon.png?v=1660838308\" alt=\"Twitter icon\">\n<\/a>\n<\/div>"
             }
           },
           "footer-1": {
