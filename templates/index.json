@@ -3,6 +3,13 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "banner_logo": {
+          "type": "image",
+          "settings": {
+            "heading": "Banner Logo",
+            "desktop_content_alignment": "center"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
