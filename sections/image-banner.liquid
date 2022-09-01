@@ -56,8 +56,8 @@
       }}
     </div>
   {%- elsif section.settings.image_2 == blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
-      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    <div class="homepage-default-banner banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+      <img src="{{ 'home-banner.jpg' | asset_img_url: 'original'}}" alt="Banner" loading="lazy" class="banner-img" />
     </div>
   {%- endif -%}
   {%- if section.settings.image_2 != blank -%}
@@ -334,7 +334,7 @@
         {
           "type": "text",
           "id": "heading",
-          "default": "Image banner",
+          "default": "Better Sleep, Better Living",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
         },
         {
@@ -367,7 +367,7 @@
         {
           "type": "text",
           "id": "text",
-          "default": "Give customers details about the banner image(s) or content on the template.",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis varius commodo sit aliquam bibendum. Tincidunt feugiat ornare congue duis tincidunt velit.",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
         },
         {

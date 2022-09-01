@@ -1,5 +1,7 @@
 @media (min-width:0) {
-  
+  body .header-wrapper--border-bottom {
+    border-bottom:0;
+  }
   body .header {
     padding: 0;
     width: 100%;
