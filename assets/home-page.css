@@ -1,3 +1,31 @@
 @media(min-width:0){
-    
+    .banner__box.content-container {
+        width: 100%;
+        max-width: 655px;
+        padding: 0;
+      }
+    .banner-logo{
+        width: 317px;
+        margin: 0px auto;
+    }
+    .banner-logo img{
+        width: 100%;
+    }
+    .banner__heading {
+        color: #000;
+        font-weight: 500;
+        margin: 20px 0px 16px;
+      }
+      .banner__text.body {
+        margin: 0;
+      }
+      .banner__text.body p{
+        color: #000;
+      }
+     
+    body .banner__box > * + .banner__buttons {
+        margin-top:40px;
+        max-width: 100%;
+        width: 100%;
+      }
 }
