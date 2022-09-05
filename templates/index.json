@@ -116,8 +116,8 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Bestseller Products",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
