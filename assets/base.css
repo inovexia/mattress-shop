@@ -449,16 +449,16 @@ h5,
   } */
 }
 
-h2,
+/* h2,
 .h2 {
   font-size: calc(var(--font-heading-scale) * 2rem);
-}
+} */
 
 @media only screen and (min-width: 750px) {
-  h2,
+  /* h2,
   .h2 {
     font-size: calc(var(--font-heading-scale) * 2.4rem);
-  }
+  } */
 }
 
 h3,
@@ -2316,10 +2316,10 @@ input[type='checkbox'] {
   color: rgb(var(--color-foreground));
 }
 
-.header__heading-link .h2 {
+/* .header__heading-link .h2 {
   line-height: 1;
   color: rgba(var(--color-foreground), 0.75);
-}
+} */
 
 .header__heading-logo {
   height: auto;

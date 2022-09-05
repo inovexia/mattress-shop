@@ -13,6 +13,9 @@
         overflow-x: hidden;
         color: #535353;
       }
+      a{
+        outline: none;
+      }
     
       /* TYPOGRAPHY */
       .text-color-white{

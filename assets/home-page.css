@@ -81,6 +81,25 @@
         text-transform: uppercase;
       }
       /* End Key features */
+      /* Best Seller */
+      .best-sellers .collection {
+        padding: 40px 0px;
+      }
+      .best-sellers .collection__title.title-wrapper {
+        margin-bottom: 0;
+      }
+      .best-sellers .collection__title h2 {
+        margin-bottom: 16px;
+      }
+      .best-sellers .page-width-desktop {
+        max-width: 100%;
+      }
+      .best-sellers .card__badge {
+        display: none;
+      }
+      .best-sellers .card.card--standard {
+        border: none;
+      }
 }
 @media (min-width:768px){
   /* Banner Section */
@@ -99,4 +118,12 @@
     border-bottom: 0;
   }
   /* End Key feature */
+  /* Best seller */
+  .best-sellers .collection {
+    padding: 96px 0px;
+  }
+  .best-sellers .collection__title h2 {
+    margin-bottom: 40px;
+  }
+  
 }
