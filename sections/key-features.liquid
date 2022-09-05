@@ -1,0 +1,78 @@
+<div class="key-features">
+  <div class="container">
+    <div class="row">
+      <div class="feature-border d-block d-md-flex g-0">
+        {%- for block in section.blocks -%}
+        <div class="col-12 col-md-4 feature">
+          <div class="key-feature">
+            <div class="feature-icon">
+              {%- if block.settings.feature_icon != blank -%}
+                {{ block.settings.feature_icon | image_url: width: 'auto' | image_tag:
+                  loading: 'lazy',
+                  alt: block.settings.feature_icon.alt | escape
+                }}
+              {%- else -%}
+                {% assign feature = "feature-#.png" | replace: "#", forloop.index %}
+                <img src="{{ feature | asset_img_url: '' }}" alt="{{ feature }}" width="auto" loading="lazy" />
+              {%- endif -%}
+            </div>
+            <div class="feature-content">
+              <h6 class="m-0">{{ block.settings.feature_title }}</h6>
+              <p>{{ block.settings.feature_description }}</p>
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Key Features",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "key_features",
+      "label": "Key Feature",
+      "default": "Key Features"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Key Features",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "feature_icon",
+          "label": "Feature Icon"
+        },
+        {
+          "type": "text",
+          "id": "feature_title",
+          "label": "Feature Title"
+        },
+        {
+          "type": "text",
+          "id": "feature_description",
+          "label": "Feature Description"
+        } 
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Key Features",
+      "blocks": [
+        {
+          "type": "feature"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

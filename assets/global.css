@@ -1,4 +1,7 @@
 @media (min-width:0){
+	.predictive-search.predictive-search--header {
+		width: 0px;
+	}
 	.container{
 		width: 100%;
 		max-width: 1300px;

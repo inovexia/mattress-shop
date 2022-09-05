@@ -223,9 +223,9 @@
               </details-modal>
             </div>
             
-            <div class="search-box d-none d-lg-block">
-              <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-                <div class="field">
+            <div class="search-box d-none d-lg-block h-100">
+              <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form h-100">
+                <div class="field d-flex h-100">
                   {{ 'search.png' | asset_url | img_tag: 'Search Icon' }}
                   <input class="search__input field__input"
                     id="Search-In-Modal-1"
@@ -270,7 +270,7 @@
           <div class="col-lg-5 d-none d-lg-block">
             <div class="header-right">
               <div class="social-link">
-                <ul class="header-list-socail list-unstyled list-social" role="list">
+                <ul class="header-list-socail list-unstyled list-social d-flex" role="list">
                   {%- if settings.social_twitter_link != blank -%}
                   <li class="list-social__item">
                   <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
@@ -396,7 +396,6 @@
             <summary class="header__icon header__icon--menu header__icon--summary link focus-inset h-auto" aria-label="{{ 'sections.header.menu' | t }}">
               <span class="hamburger-icon">
                 {{ 'hamburger-icon.png' | asset_url | img_tag: 'hamburger Icon' }}
-                
               </span>
             </summary>
             <div id="menu-drawer" class="gradient menu-drawer motion-reduce" tabindex="-1">

@@ -49,6 +49,41 @@
         "show_text_below": false
       }
     },
+    "key_features": {
+      "type": "key-features",
+      "settings": {
+        "features_section_title": "Key Features"
+      },
+      "blocks": {
+        "feature1": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "180 Night Trial",
+            "feature_description": "Comfort Gurantee"
+          }
+        },
+        "feature2": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Free",
+            "feature_description": "Shipping"
+          }
+        },
+        "feature3": {
+          "type": "feature",
+          "settings": {
+            "feature_title": "48 hour delivery",
+            "feature_description": "In Select markets*"
+          }
+        }
+      },
+      "block_order": [
+        "feature1",
+        "feature2",
+        "feature3"  
+      ]
+    },
+  
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -214,6 +249,7 @@
   },
   "order": [
     "image_banner",
+    "key_features",
     "rich_text",
     "featured_collection",
     "collage",
