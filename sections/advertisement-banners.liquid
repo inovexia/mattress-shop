@@ -1,11 +1,11 @@
 <section class="advertisement-banner">
   <div class="collection-image">
   
-      {{ block.settings.bannerImage1 | image_url | image_tag:
+      {{ section.settings.bannerImage1 | image_url | image_tag:
         loading: 'lazy',
         width: 291,
         height: 220,
-        alt: block.settings.bannerImage1.alt | escape
+        alt: section.settings.bannerImage1.alt | escape
       }}
 
   </div>
@@ -13,54 +13,42 @@
 
 {% schema %}
 {
-  "blocks": [
+  "name": "Advertisement Banner",
+  "settings": [
     {
-      "type": "banner1",
-      "name": "Advertisement Banner1",
-      "settings": [
-        {
-          "id": "bannerImage1",
-          "type": "image_picker",
-          "label": "Banner Image 1"
-        },
-        {
-          "id":"banner_url1",
-          "type":"url",
-          "label":"Banner Link 1"
-        }
-      ]
+      "type": "image_picker",
+      "id": "advertisement_image1",
+      "label": "Advertisement Image 1"
     },
     {
-      "type": "banner2",
-      "name": "Advertisement Banner2",
-      "settings": [
-        {
-          "id": "bannerImage2",
-          "type": "image_picker",
-          "label": "Banner Image 2"
-        },
-        {
-          "id":"banner_url2",
-          "type":"url",
-          "label":"Banner Link 2"
-        }
-      ]
+      "type": "url",
+      "id": "advertisement_url1",
+      "label": "Advertisement Link 1"
     },
     {
-      "type": "banner3",
-      "name": "Advertisement Banner3",
-      "settings": [
-        {
-          "id": "bannerImage3",
-          "type": "image_picker",
-          "label": "Banner Image 3"
-        },
-        {
-          "id":"banner_url3",
-          "type":"url",
-          "label":"Banner Link 3"
-        }
-      ]
+      "type": "image_picker",
+      "id": "advertisement_image2",
+      "label": "Advertisement Image 2"
+    },
+    {
+      "type": "url",
+      "id": "advertisement_url2",
+      "label": "Advertisement Link 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "advertisement_image3",
+      "label": "Advertisement Image 3"
+    },
+    {
+      "type": "url",
+      "id": "advertisement_url3",
+      "label": "Advertisement Link 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advertisement Banner"
     }
   ]
 }
