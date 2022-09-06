@@ -85,6 +85,9 @@
       .best-sellers .collection {
         padding: 40px 0px;
       }
+      .best-sellers ul .grid__item {
+        padding: 0px 10px;
+      }
       .best-sellers .collection__title.title-wrapper {
         margin-bottom: 0;
       }
@@ -99,6 +102,42 @@
       }
       .best-sellers .card.card--standard {
         border: none;
+      }
+      .best-sellers .card__information {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+      .best-sellers .card__information .card-title {
+        width: -moz-available;
+      }
+      .best-sellers  .card-price-information {
+        text-align: right;
+      }
+      .best-sellers .vendor.caption-with-letter-spacing.light {
+        font-size: 16px;
+        line-height: 20px;
+        color: #535353;
+        font-weight: 400;
+        text-transform: none;
+      }
+      .best-sellers .card__information h3 a{
+        font-size: 16px;
+        line-height: 20px;
+        color: #535353;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .best-sellers .card__information h3 a:hover{
+        text-decoration: none;
+      }
+      .best-sellers .price__container {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .best-sellers .price-item.price-item--sale.price-item--last {
+        font-weight: 700;
+        color: #535353;
       }
 }
 @media (min-width:768px){
