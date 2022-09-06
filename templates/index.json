@@ -147,6 +147,17 @@
         "padding_bottom": 36
       }
     },
+    "offer-banner": {
+      "type": "offer-banner",
+      "blocks": {
+        "feature1": {
+          "type": "offer"
+        }
+      },
+      "settings": {
+        "key_features": "Offer Banner"
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -207,6 +218,7 @@
     "best-seller",
     "advertisement_banners",
     "featured-products",
+    "offer-banner",
     "multicolumn"
   ]
 }

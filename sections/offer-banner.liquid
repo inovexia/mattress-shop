@@ -1,0 +1,61 @@
+<div class="offer-banner">
+    <div class="container">
+      <div class="row">
+        {%- for block in section.blocks -%}
+        <div class="col-12 col-md-6 offer">
+          <div class="offer-image"> 
+              {%- if block.settings.offer_image != blank -%}
+                {{ block.settings.offer_image | image_url: width: 'auto' | image_tag:
+                  loading: 'lazy',
+                  alt: block.settings.offer_image.alt | escape
+                }}
+              {%- else -%}
+                {% assign offer_image = "offer-#.png" | replace: "#", forloop.index %}
+                <img src="{{ offer_image | asset_img_url: '' }}" alt="{{ offer_image }}" width="auto" loading="lazy" />
+              {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+      </div>
+    </div>
+  </div>
+  {% schema %}
+  {
+    "name": "Offer Banner",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "offer-banner",
+        "label": "Offer Banner",
+        "default": "Offer Banner"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "offer",
+        "name": "Offer Banner",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "offer_image",
+            "label": "Offer Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Offer Banner",
+        "blocks": [
+          {
+            "type": "offer"
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  
