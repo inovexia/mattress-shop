@@ -1,11 +1,11 @@
 <section class="advertisement-banner">
   <div class="collection-image">
   
-      {{ section.settings.bannerImage1 | image_url | image_tag:
+      {{ section.settings.advertisement_image1 | image_url | image_tag:
         loading: 'lazy',
         width: 291,
         height: 220,
-        alt: section.settings.bannerImage1.alt | escape
+        alt: section.settings.advertisement_image1.alt | escape
       }}
 
   </div>
