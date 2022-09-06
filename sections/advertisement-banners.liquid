@@ -1,6 +1,12 @@
 <section class="advertisement-banner">
   <div class="collection-image">
-
+  
+      {{ block.settings.bannerImage1 | image_url | image_tag:
+        loading: 'lazy',
+        width: 291,
+        height: 220,
+        alt: block.settings.bannerImage1.alt | escape
+      }}
 
   </div>
 </section>
