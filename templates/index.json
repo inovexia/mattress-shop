@@ -181,7 +181,13 @@
       }
     },
     "clearance_sale": {
-      "type": "clearance-sale"
+      "type": "clearance-sale",
+      "settings": {
+        "clearance_sale_title": "Clearance Sale",
+        "clearance_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci ut urna odio massa at elementum sed non vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci ut urna odio massa at elementum sed non vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci ut urna odio massa at elementum sed non vitae.",
+        "clearance_sale_image": "shopify:\/\/shop_images\/bed.png",
+        "read_more_button": ""
+      }
     }
   },
   "order": [
