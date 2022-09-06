@@ -171,6 +171,9 @@
         "offer-banner": "Offer Banner"
       }
     },
+    "latest_blogs": {
+      "type": "latest-blogs"
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -232,6 +235,7 @@
     "advertisement_banners",
     "featured-products",
     "offer-banner",
+    "latest_blogs",
     "multicolumn"
   ]
 }

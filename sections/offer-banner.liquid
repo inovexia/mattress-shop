@@ -2,16 +2,16 @@
     <div class="container">
       <div class="row">
         {%- for block in section.blocks -%}
-        <div class="col-12 col-md-6 offer">
+        <div class="col-12 col-md-6 offer mb-4 mb-md-0">
           <div class="offer-image"> 
               {%- if block.settings.offer_image != blank -%}
-                {{ block.settings.offer_image | image_url: width: 'auto' | image_tag:
+                {{ block.settings.offer_image | image_url: width: '1000x' | image_tag:
                   loading: 'lazy',
                   alt: block.settings.offer_image.alt | escape
                 }}
               {%- else -%}
                 {% assign offer_image = "offer-#.png" | replace: "#", forloop.index %}
-                <img src="{{ offer_image | asset_img_url: '' }}" alt="{{ offer_image }}" width="auto" loading="lazy" />
+                <img src="{{ offer_image | asset_img_url: '' }}" alt="{{ offer_image }}" width="1000" loading="lazy" />
               {%- endif -%}
           </div>
         </div>
