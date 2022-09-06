@@ -112,35 +112,13 @@
     },
     "advertisement_banners": {
       "type": "advertisement-banners",
-      "blocks": {
-        "47c52aed-dc88-4dd2-8fec-f77787be9e23": {
-          "type": "banner1",
-          "settings": {
-            "bannerImage1": "shopify:\/\/shop_images\/gallery-large.jpg",
-            "banner_url1": ""
-          }
-        },
-        "4cfbc1a0-1e4e-4410-8a99-245a78229e71": {
-          "type": "banner2",
-          "settings": {
-            "bannerImage2": "shopify:\/\/shop_images\/gallery-small-1.jpg",
-            "banner_url2": ""
-          }
-        },
-        "e7a54884-e193-4409-aa68-c698b675c94a": {
-          "type": "banner3",
-          "settings": {
-            "bannerImage3": "shopify:\/\/shop_images\/gallery-small-2.png",
-            "banner_url3": ""
-          }
-        }
-      },
-      "block_order": [
-        "47c52aed-dc88-4dd2-8fec-f77787be9e23",
-        "4cfbc1a0-1e4e-4410-8a99-245a78229e71",
-        "e7a54884-e193-4409-aa68-c698b675c94a"
-      ],
       "settings": {
+        "advertisement_image1": "shopify:\/\/shop_images\/gallery-large.jpg",
+        "advertisement_url1": "",
+        "advertisement_image2": "shopify:\/\/shop_images\/gallery-small-1.jpg",
+        "advertisement_url2": "",
+        "advertisement_image3": "shopify:\/\/shop_images\/gallery-small-2.png",
+        "advertisement_url3": ""
       }
     },
     "collage": {
