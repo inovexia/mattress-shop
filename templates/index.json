@@ -150,12 +150,25 @@
     "offer-banner": {
       "type": "offer-banner",
       "blocks": {
-        "feature1": {
-          "type": "offer"
+        "648b304d-c1e8-4f24-af8d-5edc69bf90db": {
+          "type": "offer",
+          "settings": {
+            "offer_image": "shopify:\/\/shop_images\/offer-1.jpg"
+          }
+        },
+        "b0407468-5943-4fa7-8010-8d269128cfd2": {
+          "type": "offer",
+          "settings": {
+            "offer_image": "shopify:\/\/shop_images\/offer-2.jpg"
+          }
         }
       },
+      "block_order": [
+        "648b304d-c1e8-4f24-af8d-5edc69bf90db",
+        "b0407468-5943-4fa7-8010-8d269128cfd2"
+      ],
       "settings": {
-        "key_features": "Offer Banner"
+        "offer-banner": "Offer Banner"
       }
     },
     "multicolumn": {
