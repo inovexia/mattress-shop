@@ -118,6 +118,7 @@
         width: 100%;
         max-width: 310px;
         margin: 0px auto;
+        display: inline-block;
       }
       .button-white:hover{
         color: #fff;
@@ -134,6 +135,7 @@
         transition: all 0.3s;
         text-decoration: none;
         text-transform: uppercase;
+        display: inline-block;
       }
       .button-primary:hover{
         background-color: #fff;
@@ -150,6 +152,7 @@
         transition: all 0.3s;
         text-decoration: none;
         text-transform: uppercase;
+        display: inline-block;
       }
       .button-primary-rounded:hover{
         background-color: #fff;

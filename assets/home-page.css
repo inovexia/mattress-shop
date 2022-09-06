@@ -169,6 +169,18 @@
         font-size: 16px;
         text-transform: capitalize;
       }
+      /* End Blogs */
+      /* Clearance sale css */
+      .clearance-sale {
+        padding: 75px 0px;
+      }
+      .clearance-content h3 {
+        margin-bottom: 16px;
+      }
+      .clearance-content a {
+        margin-top: 40px;
+        text-transform: capitalize;
+      }
 }
 @media (min-width:768px){
   /* Banner Section */
@@ -198,6 +210,18 @@
   /* Latest Blogs */
   .latest-blogs {
     margin-top:120px;
+  }
+  /* Clearance sale css */
+  .clearance-sale {
+    padding: 120px 0px;
+  }
+  .clearance-outer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .clearance-content {
+    max-width: 513px;
   }
   
 }
