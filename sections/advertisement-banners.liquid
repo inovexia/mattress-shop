@@ -1,12 +1,60 @@
+<section class="advertisement-banner">
+Hello
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Advertisement Banners",
+  "max_blocks":3,
+  "blocks": [
+    {
+      "type": "banner1",
+      "name": "Advertisement banner1",
+      "settings": [
+        {
+          "id": "banner_url1",
+          "type": "url",
+          "label": "Banner Link 1"
+        },
+        {
+          "id": "banner_image1",
+          "type": "image_picker",
+          "label": "Banner Image 1"
+        }
+      ]
+    },
+    {
+      "type": "banner2",
+      "name": "Advertisement banner2",
+      "settings": [
+        {
+          "id": "banner_url2",
+          "type": "url",
+          "label": "Banner Link 2"
+        },
+        {
+          "id": "banner_image2",
+          "type": "image_picker",
+          "label": "Banner Image 2"
+        }
+      ]
+    },
+    {
+      "type": "banner3",
+      "name": "Advertisement banner3",
+      "settings": [
+        {
+          "id": "banner_url3",
+          "type": "url",
+          "label": "Banner Link 3"
+        },
+        {
+          "id": "banner_image3",
+          "type": "image_picker",
+          "label": "Banner Image 3"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}

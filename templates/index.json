@@ -110,6 +110,9 @@
         "padding_bottom": 36
       }
     },
+    "advertisement_banners":{
+      "type": "advertisement-banners"
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -220,6 +223,7 @@
     "image_banner",
     "key_features",
     "best-seller",
+    "advertisement_banners",
     "collage",
     "video",
     "multicolumn"
