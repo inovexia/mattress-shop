@@ -1,0 +1,70 @@
+<section class="advertisement-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+                <div class="clearance-image">
+                    {% if section.settings.clearance_sale_image != blank %}
+                    {{ section.settings.clearance_sale_image | image_url: width: 1000 | image_tag:
+                      loading: 'lazy',
+                      alt: section.settings.clearance_sale_image.alt | escape
+                    }}
+                    {% else %}
+                    <img src="{{ 'bed.jpg' | asset_img_url: '1000' }}" alt="clearance image" loading="lazy" />
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="clearance-content">
+                    <h3>
+                        {% if section.settings.clearance_sale_title != blank %}
+                    {{ section.settings.clearance_sale_title }}
+                    {% else %}
+                    Clearance Sale
+                    {% endif %}
+                    </h3>
+                    <p>
+                        {% if section.settings.clearance_description != blank %}
+                        {{ section.settings.clearance_description }}
+                        {% else %}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci ut urna odio massa at elementum sed non vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci ut urna odio massa at elementum sed non vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci ut urna odio massa at elementum sed non vitae.
+                        {% endif %}
+                    </p>
+                    <a class="button-primary-rounded" href="{{ section.settings.read_more_button }}">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  {% schema %}
+  {
+    "name": "Clearance Sale",
+    "settings": [
+    {
+        "type": "text",
+        "id": "clearance_sale_title",
+        "label": "Clearance Sale Title"
+      },
+      {
+        "type": "html",
+        "id": "clearance_description",
+        "label": "Clearance Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "clearance_sale_image",
+        "label": "Clearance Sale Image"
+      },
+      {
+        "type": "url",
+        "id": "read_more_button",
+        "label": "Read More Button"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Clearance Sale"
+      }
+    ]
+  }
+  {% endschema %}

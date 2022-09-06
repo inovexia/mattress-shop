@@ -139,6 +139,36 @@
         font-weight: 700;
         color: #535353;
       }
+      /* Latest Blogs */
+      .latest-blogs {
+        margin-top: 75px;
+      }
+      .latest-blogs .product-title h4{
+      margin:16px 0px 8px;
+      }
+      .latest-blogs .product-title h4 a {
+        font-size: 24px;
+        line-height: 36px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #000;
+      }
+      .latest-blogs .articles p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #535353;
+        font-weight: 500;
+        margin: 16px 0px 40px;
+      }
+      .latest-blogs .meta-data strong {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 500;
+      }
+      .latest-blogs .articles .button-primary-rounded {
+        font-size: 16px;
+        text-transform: capitalize;
+      }
 }
 @media (min-width:768px){
   /* Banner Section */
@@ -163,6 +193,11 @@
   }
   .best-sellers .collection__title h2 {
     margin-bottom: 40px;
+  }
+  /* End best seller */
+  /* Latest Blogs */
+  .latest-blogs {
+    margin-top:120px;
   }
   
 }
