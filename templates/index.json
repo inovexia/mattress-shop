@@ -83,8 +83,8 @@
         "key_features": "Key Features"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "best-seller": {
+      "type": "best-seller",
       "settings": {
         "title": "Bestseller Products",
         "heading_size": "h0",
@@ -219,7 +219,7 @@
   "order": [
     "image_banner",
     "key_features",
-    "featured_collection",
+    "best-seller",
     "collage",
     "video",
     "multicolumn"
