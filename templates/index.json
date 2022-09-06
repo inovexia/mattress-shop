@@ -172,7 +172,13 @@
       }
     },
     "latest_blogs": {
-      "type": "latest-blogs"
+      "type": "latest-blogs",
+      "settings": {
+        "section_title": "OUR BLOG",
+        "article1": "news\/best-mattress-for-better-sleep-1",
+        "article2": "news\/best-mattress-for-better-sleep-2",
+        "article3": "news\/best-mattress-for-better-sleep-3"
+      }
     },
     "multicolumn": {
       "type": "multicolumn",
