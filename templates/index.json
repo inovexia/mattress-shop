@@ -123,13 +123,13 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Bestseller Products",
+        "title": "Featured Products",
         "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
+        "collection": "best-sellers",
+        "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": false,
