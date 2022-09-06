@@ -1,12 +1,47 @@
 <section class="advertisement-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7">
+        <a href="{{ section.settings.advertisement_url1 }}">
+        {% if section.settings.advertisement_image1 != blank %}
+        {{ section.settings.advertisement_image1 | image_url: width: 1000 | image_tag:
+          loading: 'lazy',
+          alt: section.settings.advertisement_image1.alt | escape
+        }}
+        {% else %}
+        <img src="{{ 'gallery-large.jpg' | asset_img_url: '' }}" alt="Image Left" />
+        {% endif %}
+      </a>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="image-grid">
+          <a href="{{ section.settings.advertisement_url2 }}">
+            {% if section.settings.advertisement_image2 != blank %}
+            {{ section.settings.advertisement_image2 | image_url: width: 1000 | image_tag:
+              loading: 'lazy',
+              alt: section.settings.advertisement_image2.alt | escape
+            }}
+            {% else %}
+            <img src="{{ 'gallery-small1.jpg' | asset_img_url: '' }}" alt="Image Left" />
+            {% endif %}
+          </a>
+          <a href="{{ section.settings.advertisement_url3 }}">
+            {% if section.settings.advertisement_image3 != blank %}
+            {{ section.settings.advertisement_image3 | image_url: width: 1000 | image_tag:
+              loading: 'lazy',
+              alt: section.settings.advertisement_image3.alt | escape
+            }}
+            {% else %}
+            <img src="{{ 'gallery-small2.jpg' | asset_img_url: '' }}" alt="Image Left" />
+            {% endif %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="collection-image">
   
-      {{ section.settings.advertisement_image1 | image_url | image_tag:
-        loading: 'lazy',
-        width: 291,
-        height: 220,
-        alt: section.settings.advertisement_image1.alt | escape
-      }}
+      
 
   </div>
 </section>
