@@ -27,5 +27,9 @@
         flex-wrap: nowrap;
         width: 100%;
       }
+      .all-collections-page .icon.icon-caret {
+        width: 10px;
+        margin-left: 10px;
+      }
       
 }
