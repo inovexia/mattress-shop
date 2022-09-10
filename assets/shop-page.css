@@ -1,0 +1,31 @@
+@media (min-width:0){
+    .facets-vertical .facets-wrapper {
+        padding: 0;
+        margin-right: 20px;
+      }
+      .sidebar-entry {
+        background-color: #535353;
+        border-radius:0;
+        padding: 15px;
+        color: #fff;
+        text-align: center;
+        border-radius:10px 10px 0px 0px;
+      }
+      .sidebar-entry h4{
+        margin: 0;
+        font-size: 22px;
+      }
+      .all-collections-page .facets-container {
+        padding: 15px;
+        border: 1px solid rgba(0,0,0,0.2);
+        border-radius: 0px 0px 10px 10px;
+      }
+      .all-collections-page .facets__summary.caption-large.focus-offset span {
+        text-decoration: none;
+      }
+      .all-collections-page .pagination__list {
+        flex-wrap: nowrap;
+        width: 100%;
+      }
+      
+}
