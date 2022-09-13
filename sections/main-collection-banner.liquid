@@ -9,21 +9,11 @@
   }
 {%- endstyle -%}
 
-<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
-  <div class="collection-hero__inner page-width">
-    <div class="collection-hero__text-wrapper">
-      <h1 class="collection-hero__title">
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
-      </h1>
-
-      {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
-      {%- endif -%}
-    </div>
-
-    {%- if section.settings.show_collection_image and collection.image -%}
-      <div class="collection-hero__image-container media gradient">
+<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient mt-5 mt-md-0 pb-0">
+  <div class="collection-hero__inner page-width d-block pb-0">
+    <div class="collection-banner">
+      {%- if section.settings.show_collection_image and collection.image -%}
+      <div class="collection-banner-image">
         <img
           srcset="{%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
             {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
@@ -40,6 +30,19 @@
         >
       </div>
     {%- endif -%}
+    </div>
+    <div class="collection-details">
+      <div class="collection-hero__text-wrapper pt-3 pb-0 mb-0">
+        <h1 class="collection-hero__title">
+          <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+          {{- collection.title | escape -}}
+        </h1>
+  
+        {%- if section.settings.show_collection_description -%}
+          <div class="collection-hero__description rte w-100 mb-0">{{ collection.description }}</div>
+        {%- endif -%}
+      </div>
+    </div>
   </div>
 </div>
 
