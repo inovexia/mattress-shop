@@ -60,7 +60,9 @@
     position: absolute;
     top: -100%;
   }
-
+  header .header__active-menu-item{
+    text-decoration: none;
+  }
   header .field {
     position: unset;
     display: flex;

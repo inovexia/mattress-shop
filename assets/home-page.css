@@ -4,6 +4,9 @@
   #Banner-template--16425168273633__image_banner {
     height: 154px;
   }
+  .banner__media.media {
+    background-color: #FF87A6;
+  }
     .banner__box.content-container {
         width: 100%;
         max-width: 655px;

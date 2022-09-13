@@ -1,7 +1,12 @@
 @media (min-width:0){
-    .facets-vertical .facets-wrapper {
+  body .facet-filters__field .select {
+    width: 140px;
+  }
+  .facets-vertical-form {
+    margin-bottom: 15px;
+  }
+  .all-collections-page .facets-vertical .facets-wrapper {
         padding: 0;
-        margin-right: 20px;
       }
       .sidebar-entry {
         background-color: #535353;
@@ -14,6 +19,7 @@
       .sidebar-entry h4{
         margin: 0;
         font-size: 22px;
+        color: #fff;
       }
       .all-collections-page .facets-container {
         padding: 15px;
@@ -31,5 +37,91 @@
         width: 10px;
         margin-left: 10px;
       }
+      .all-collections-page .quick-add {
+        width: 80%;
+        margin: 0px auto 20px;
+      }
+      .all-collections-page .product-card-wrapper .card{
+        padding: 15px;
+      }
+      .all-collections-page .quick-add__submit.button-primary-rounded {
+        font-size: 14px;
+        padding: 5px;
+      }
+      .all-collections-page .grid__item .card__badge {
+        align-self: baseline;
+        grid-row-start: 1;
+        justify-self: flex-end;
+      }
+      .all-collections-page .badge.color-accent-2{
+        background-color: #28a745;
+        border:none;
+      }
+      #product-grid {
+        list-style: none;
+        padding: 0;
+      }
+      #product-grid li{
+        margin-bottom: 30px;
+      }
+      .all-collections-page .full-unstyled-link{
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+      }
+      .all-collections-page .underline-links-hover:hover a {
+        text-decoration: none;
+        color: #000;
+      }
+      .all-collections-page .card__inner {
+        height: 200px;
+      }
+      .all-collections-page .mobile-facets__arrow svg {
+        width: 20px;
+      }
+      .all-collections-page .mobile-facets__close-button svg {
+        width: 20px;
+      }
+      .all-collections-page .mobile-facets__close-button {
+        margin: 20px auto;
+        border: none;
+      }
+      .facets__price input {
+        width: 100px;
+      }
+      .mobile-facets__summary {
+        padding: 0px 15px;
+      }
+      body .active-facets-vertical-filter {
+        display: none !important;
+      }
+      body .facets__disclosure-vertical {
+        border-top: none !important;
+      }
+      #main-collection-filters {
+        margin-bottom: 20px;
+      }
+      .pagination__item.pagination__item--current.light {
+        color: #FF5C7B;
+        font-weight: 700;
+        position: unset;
+      }
+      .pagination__item.link:hover {
+        color: #FF5C7B;
+      }
       
+}
+@media (min-width:768px){
+  #product-grid li{
+    margin-bottom: 20px;
+  }
+  #main-collection-filters {
+    margin-bottom:0px;
+  }
+}
+@media screen and (max-width: 900px){
+  .all-collections-page .quick-add__submit.button-primary-rounded {
+    font-size: 10px;
+    padding: 0px 5px;
+  }
 }
