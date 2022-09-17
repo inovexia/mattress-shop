@@ -63,6 +63,9 @@
   header .header__active-menu-item{
     text-decoration: none;
   }
+  .header__menu-item.list-menu__item {
+    padding: 0;
+  }
   header .field {
     position: unset;
     display: flex;

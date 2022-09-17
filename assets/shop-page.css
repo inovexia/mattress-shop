@@ -8,6 +8,32 @@
   .all-collections-page .facets-vertical .facets-wrapper {
         padding: 0;
       }
+     body .product-form__input input[type="radio"]:checked + label {
+        background-color:#FF5C7B;
+      }
+      body .product-form__input input[type="radio"] + label{
+        border: 1px solid #FF5C7B;
+      }
+      body .product-form__input input[type="radio"] + label:hover {
+        border-color:#FF5C7B;
+      }
+      body .product-form__input input[type="radio"] + label:focus-visible {
+        outline:none;
+        outline-offset:unset;
+        box-shadow:none;
+      }
+      .quick-add-modal__content .product__title a:hover {
+        text-decoration: none;
+      }
+      .quick-add-modal__content .product__title a h2 {
+        font-size: 30px;
+      }
+      body .shopify-payment-button__button--unbranded{
+        background-color: #FF5C7B;
+      }
+      body .shopify-payment-button__button--unbranded:hover, .shopify-payment-button__button--unbranded:hover:not([disabled]) {
+        background-color:#FF5C7B;
+      }
       .sidebar-entry {
         background-color: #535353;
         border-radius:0;
@@ -53,7 +79,7 @@
         grid-row-start: 1;
         justify-self: flex-end;
       }
-      .all-collections-page .badge.color-accent-2{
+      body .badge.color-accent-2{
         background-color: #28a745;
         border:none;
       }

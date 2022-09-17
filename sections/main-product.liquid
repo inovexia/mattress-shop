@@ -1,8 +1,11 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="page-width section-{{ section.id }}-padding"
+  class="section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
+<div class="container">
+
+
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -341,12 +344,12 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
-            {%- when 'description' -%}
-              {%- if product.description != blank -%}
-                <div class="product__description rte quick-add-hidden">
-                  {{ product.description }}
-                </div>
-              {%- endif -%}
+              {%- when 'description' -%}
+                {%- if product.description != blank -%}
+                  <div class="product__description rte quick-add-hidden">
+                    <!-- {{ product.description }} -->
+                  </div>
+                {%- endif -%}
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
@@ -908,6 +911,8 @@
       </div>
     {%- endif -%}
   </div>
+  
+
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div
@@ -993,7 +998,7 @@
     </script>
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
-
+</div>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       function isIE() {
@@ -1069,7 +1074,44 @@
       ]
     }
   </script>
+
 </section>
+
+<div class="container">
+  <div class="product-tab-outer">
+    <ul id="product-tab">
+      <li><a id="tab1">Description</a></li>
+      <li><a id="tab2">Information</a></li>
+      <li><a id="tab3">Features</a></li>
+      <li><a id="tab4">Review</a></li>
+  
+  </ul>
+          <div class="product-content-area" id="tab1C">
+            {% if product.description != blank %}
+            {{ product.description }}
+              {%else %}
+              No description.
+              {% endif %}
+          </div>
+          <div class="product-content-area" id="tab2C">
+            {% if product.metafields.custom.product_info_tab != blank %}
+            {{ product.metafields.custom.product_info_tab }}
+              {%else %}
+              No information added.
+              {% endif %} 
+           </div>
+          <div class="product-content-area" id="tab3C">
+            {% if product.metafields.custom.product_feature_tab != blank %}
+            {{ product.metafields.custom.product_feature_tab }}
+              {%else %}
+              Feature not available.
+              {% endif %} 
+          </div>
+          <div class="product-content-area" id="tab4C">No Review</div>
+         
+  </div>
+</div>
+
 
 {% schema %}
 {
