@@ -1,0 +1,22 @@
+@media (min-width:0){
+      .customer.login button, .customer.register button, .shopify-challenge__button.btn{
+        border-radius: 32px;
+        background-color: #FF5C7B;
+        border: 1px solid #FF5C7B;
+        min-width: 150px;
+      }
+      .customer.login button:hover, .customer.register button:hover, .shopify-challenge__button.btn:hover{
+        color: #FF5C7B;
+        background-color: #fff;
+        border: 1px solid #FF5C7B;
+      }
+      .shopify-challenge__button.btn {
+        margin-top: 30px;
+        outline: none;
+      }
+      .shopify-challenge__button.btn:focus-within{
+        box-shadow: none;
+        outline: none;
+        outline-offset: 0px;
+      }
+}

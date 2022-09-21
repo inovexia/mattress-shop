@@ -50,6 +50,16 @@
     align-items: center;
     justify-content: end;
   }
+  .header__icon.header__icon--account{
+    text-decoration: none;
+  }
+  .header__icon.header__icon--account:hover span{
+    color: #535353;
+  }
+  .header__icon.header__icon--account span {
+    font-size: 1.6rem;
+    color: #535353;
+  }
   .top-header .search-modal__content {
     display: flex;
     width: 90%;
@@ -165,7 +175,7 @@
     width: 24px;
   }
   .mobile-user-icon .header__icon--account.link.focus-inset img {
-    width: 18px;
+    width: 22px;
   }
   header .cart-count-bubble {
     background-color: #FF5C7B;
