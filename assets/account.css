@@ -19,4 +19,97 @@
         outline: none;
         outline-offset: 0px;
       }
+      .entry-header-account {
+        border-bottom: 2px solid #000;
+      }
+      .entry-header-account h1 {
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+        padding: 20px 0px;
+      }
+      .account-data {
+        padding: 50px 0px;
+      }
+      .account-data .menu {
+        list-style: none;
+        padding:0;
+      }
+      .account-data .menu li{
+        margin: 10px 0px;
+      }
+      .menu li:first-child {
+        margin-top: 0;
+      }
+      .account-data .menu li a{
+        text-decoration: none;
+        color: #000;
+      }
+      .my-orders a {
+        color: #000;
+        font-weight: 600;
+      }
+      .action-btn button {
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        outline: none;
+      }
+      .add-address-btn button {
+        font-size: 14px;
+        text-decoration: underline;
+        font-weight: 500;
+        outline: none;
+      }
+      .add-address-btn button:focus-within, .action-btn button:focus-within{
+        outline: none;
+        box-shadow: none;
+        outline-offset: 0px;
+      }
+      .address-field-input input, .address-field-input select{
+        padding: 5px;
+        font-size: 14px;
+      }
+      .modal-dialog{
+        pointer-events: unset;
+      }
+      #AddAddress, .edit-address{
+        background-color: rgba(0,0,0,0.5);
+      }
+      #AddAddress-data, .edit-address-data{
+        background-color: #fff;
+        padding: 15px;
+      }
+      #address_form_new .field, .edit-address-data .field {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      #address_form_new .field input, .edit-address-data .field input {
+        width: 100%;
+        margin: 0;
+        border: 1px solid rgba(0,0,0,0.1);
+        padding: 5px;
+        font-size: 12px;
+      }
+      #address_form_new .field input:hover, .edit-address-data .field input:hover{
+        box-shadow: none;
+        outline: none;
+        outline-offset: 0px;
+      }
+      #address_form_new .field .select select, .edit-address-data .field .select select {
+        width: 100%;
+        padding:5px;
+        background-color: transparent;
+        border: 1px solid rgba(0,0,0,0.2);
+      }
+      #AddAddress button, .edit-address-data button {
+        text-decoration: none;
+        padding: 5px 30px;
+        margin-top: 20px;
+      }
+      .modal-entry {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 }
