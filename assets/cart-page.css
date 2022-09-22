@@ -61,3 +61,6 @@ box-shadow: none;
   .cart-featured-product .collection__view-all a {
     width: 200px;
   }
+  #cart-icon-bubble svg {
+    width: 24px;
+  }

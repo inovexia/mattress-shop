@@ -9,15 +9,12 @@
     <div class="account-data">
       <div class="container">
           <div class="d-flex flex-lg-row flex-column">
-            <div class="col-12 col-md-3 d-none d-lg-block">
+            <div class="col-12 col-md-3">
               <div class="side-bar">
                 <div class="menu-wrapper">
-                  <ul class="menu">
+                  <ul class="menu d-flex d-md-block">
                     <li>
-                      <a href="{{ routes.account_url }}">My Account</a>
-                    </li>
-                    <li>
-                      <a href="{{ routes.account_order_url }}">My Orders</a>
+                      <a href="{{ routes.account_url }}">My Orders</a>
                     </li>
                     <li>
                       <a aria-current="page" class="active" href="{{ routes.account_addresses_url }}">{{ 'Address Book' }}</a>
@@ -42,7 +39,7 @@
                         {%- endif -%}
                         <div class="d-flex align-items-center">
                           <div class="flex-grow-1" style="margin-bottom:-1rem;">{{ address | format_address }}</div>
-                          <div class="flex-shrink-1 action-btn">
+                          <div class="flex-shrink-1 action-btn d-flex">
                             <button
                               type="button"
                               id="EditFormButton_{{ address.id }}"
@@ -56,15 +53,14 @@
                             >
                               {{ 'customer.addresses.edit' | t }}
                             </button>
-                            <button
-                              type="button"
-                              aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
-                              data-target="{{ address.url }}"
-                              data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
-                              class="btn btn-link"
-                            >
-                              {{ 'customer.addresses.delete' | t }}
-                            </button>
+                            
+                            <form class="address-delete-form"
+    method="post"
+    action="/account/addresses/{{ address.id }}"
+>
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit" data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}" class="btn btn-link">{{ 'customer.addresses.delete' | t }}</button>
+</form>
                           </div>
                         </div>
                         

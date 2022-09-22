@@ -39,7 +39,7 @@
         margin: 10px 0px;
       }
       .menu li:first-child {
-        margin-top: 0;
+        margin-top: auto;
       }
       .account-data .menu li a{
         text-decoration: none;
@@ -112,4 +112,42 @@
         align-items: center;
         justify-content: space-between;
       }
+      .order-table-data{
+        overflow-x: scroll;
+      }
+      .order-item-name a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+      }
+      .order-shipping-address h4 {
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-decoration: underline;
+      }
+      .my-orders {
+        overflow-x: scroll;
+      }
+      .menu {
+        align-items: center;
+        justify-content: space-between;
+      }
+      .menu li{
+        margin: 0;
+      }
+      .account-data .menu li a {
+        border-bottom: 1px solid #000;
+      }
+}
+@media (min-width:769px){
+  .menu {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu li:first-child {
+    margin-top:0;
+  }
+  .account-data .menu li a {
+    border-bottom:none;
+  }
 }

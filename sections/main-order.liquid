@@ -9,10 +9,10 @@
   <div class="account-data">
    <div class="container">
     <div class="d-flex flex-lg-row flex-column">
-      <div class="col-12 col-md-3 d-none d-lg-block">
+      <div class="col-12 col-md-3">
         <div class="side-bar">
           <div class="menu-wrapper">
-            <ul class="menu">
+            <ul class="menu d-flex d-md-block">
               <li>
                 <a href="{{ routes.account_url }}">My Orders</a>
               </li>
@@ -27,8 +27,8 @@
         </div>
       </div>
       <div class="col-12 col-md-9">
-        <div class="account-main d-flex p-4">
-          <div class="flex-grow-1 p-2">
+        <div class="account-main">
+          <div class="flex-grow-1 w-100 order-table-data">
             <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
             {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
             <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
@@ -58,7 +58,7 @@
                       scope="row"
                       data-label="{{ 'customer.order.product' | t }}"
                     >
-                      <div>
+                      <div class="order-item-name">
                         {%- if line_item.url != blank -%}
                           <a href="{{ line_item.url }}">{{ line_item.title }}</a>
                         {%- else -%}
@@ -275,19 +275,21 @@
                   <td headers="RowTotal" role="cell" colspan="2" data-label="{{ 'customer.order.total' | t }}">{{ order.total_price | money_with_currency }}</td>
                 </tr>
               </tfoot>
+              
             </table>
           </div>
-          <div class="flex-shrink-1 p-2">
-            <div>
-              <h2>{{ 'customer.order.billing_address' | t }}</h2>
+          <div class="stx-reorder-button">{% render "stx_reorder" %}</div>
+          <div class="d-md-flex w-100 mt-4 order-shipping-address">
+            <div class="col-12 col-md-6">
+              <h4>{{ 'customer.order.billing_address' | t }}</h4>
               <p>
                 <strong>{{ 'customer.order.payment_status' | t }}:</strong>
                 {{ order.financial_status_label }}
               </p>
               {{ order.billing_address | format_address }}
             </div>
-            <div>
-              <h2>{{ 'customer.order.shipping_address' | t }}</h2>
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+              <h4>{{ 'customer.order.shipping_address' | t }}</h4>
               <p>
                 <strong>{{ 'customer.order.fulfillment_status' | t }}:</strong>
                 {{ order.fulfillment_status_label }}
