@@ -27,50 +27,55 @@
 
 {% schema %}
 {
-  "name": "Flyers Data",
+  "name": "Slideshow",
   "tag": "section",
-  "class": "section",
+  "class": "slideshow",
+  "limit": 1,
   "settings": [
     {
-      "type": "Flyer",
-      "id": "flyer",
-      "label": "Flyer",
-      "default": "Flyer"
+      "type": "text",
+      "id": "title",
+      "label": "Slideshow"
     }
   ],
+  "max_blocks": 5,
   "blocks": [
-    {
-      "type": "flyer-block",
-      "name": "Flyer Block",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "flyer-image",
-          "label": "Feature Icon"
-        },
-        {
-          "type": "url",
-          "id": "current-flyer",
-          "label": "Current Flyer Link"
-        },
-        {
-          "type": "url",
-          "id": "canada-wide-flyer",
-          "label": "Canada Wide Flyer Link"
-        }
-      ]
-    }
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
   ],
   "presets": [
     {
-      "name": "Flyers Data",
+      "name": "Slideshow",
+      "settings": {
+        "title": "Slideshow"
+      },
       "blocks": [
         {
-          "type": "flyer-block"
+          "type": "slide"
+        },
+        {
+          "type": "slide"
         }
       ]
     }
-  ]
+  ],
+  "locales": {
+    "en": {
+      "title": "Slideshow"
+    },
+    "fr": {
+      "title": "Diaporama"
+    }
+  },
+  "templates": ["article", "index", "page", "product"]
 }
 {% endschema %}
-
