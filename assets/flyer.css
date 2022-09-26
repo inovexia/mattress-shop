@@ -1,0 +1,30 @@
+@media (min-width:0px){
+    .flyer-page{
+        padding: 50px 0px;
+    }
+    .page-feat-image img {
+        border-radius: 15px;
+      }
+      .page-content p{
+        color: #535353;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+      }
+      .page-content {
+        margin-top: 30px;
+      }
+      
+}
+@media (min-width:769px){
+    .flyer-page{
+        padding: 75px 0px;
+    }
+    .page-content p{
+font-size: 24px;
+line-height: 28px;
+      }
+      .page-content {
+        padding: 0px 20px;
+      }
+}

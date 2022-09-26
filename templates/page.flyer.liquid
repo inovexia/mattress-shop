@@ -1,12 +1,76 @@
-<div class="">Flyer page</div>
-{%- if block.settings.left-sidebar != blank -%}
-<ul class="footer-block__details-content list-unstyled">
-  {%- for link in block.settings.left-sidebar.links -%}
-    <li>
-      <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-        {{ link.title }}
-      </a>
-    </li>
-  {%- endfor -%}
-</ul>
-{%- endif -%}
+<section class="flyer-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        {% section 'left-sidebar' %}
+      </div>
+      <div class="col-12 col-md-9 mt-4 mt-md-0">
+        <div class="flyers-data">
+          <h1 class="main-page-title page-title h0">
+            {{ page.title | escape }}
+          </h1>
+          <div class="page-feat-image">
+            {{ 'mattressville_flyers.jpg' | asset_url | img_tag: 'flyers' }}
+          </div>
+          <div class="page-content">
+            <p>{{ page.content | escape }}</p>
+          </div>
+          <div class="cta-box">
+            <a href="" class="button-primary-rounded">View Our Current</a>
+            <a href="" class="button-primary-rounded">Canada Wide Flyers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Flyers Data",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "Flyer",
+      "id": "flyer",
+      "label": "Flyer",
+      "default": "Flyer"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "flyer-block",
+      "name": "Flyer Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "flyer-image",
+          "label": "Feature Icon"
+        },
+        {
+          "type": "url",
+          "id": "current-flyer",
+          "label": "Current Flyer Link"
+        },
+        {
+          "type": "url",
+          "id": "canada-wide-flyer",
+          "label": "Canada Wide Flyer Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flyers Data",
+      "blocks": [
+        {
+          "type": "flyer-block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
