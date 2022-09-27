@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-flyer",
+      "settings": {
+        "title": "flyers",
+        "default":"Flyer",
+        "type":"text"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
