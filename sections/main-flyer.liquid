@@ -27,39 +27,36 @@
   </section>
 
   {% schema %}
-{
-  "name": "Flyers",
-  "settings": [
   {
-    "type": "image_picker",
-    "id": "flyer-banner-image",
-    "label": "Select Banner Image",
-    "default": "#"
-  },
-    {
-      "type": "url",
-      "id": "current-flyer-button",
-      "label": "Current Flyer Link",
-      "default": "#"
-    },
-    {
+    "name": "Flyer Content",
+    "settings": [
+      {
+        "id": "banner-image",
+        "type": "image_picker",
+        "label": "Flyer Banner Image"
+      },
+      {
+        "id": "current_flyer_button_text",
         "type": "text",
-        "id": "current-flyer-button-text",
         "label": "Current Flyer Button Text",
         "default": "Our Current Flyer"
       },
       {
+        "id": "current_flyer_button_link",
         "type": "url",
-        "id": "current-flyer-button",
-        "label": "Current Flyer Link",
-        "default": "#"
+        "label": "Current Flyer Button Link"
       },
       {
-          "type": "text",
-          "id": "canada-flyer-button-text",
-          "label": "Canada Flyer Button Text",
-          "default": "Canada Wide Flyer"
-        },
-  ]
-    }
+        "id": "canada_flyer_button_text",
+        "type": "text",
+        "label": "Canada Flyer Button Text",
+        "default": "Canada Wide Flyer"
+      },
+      {
+        "id": "canada_flyer_button_link",
+        "type": "url",
+        "label": "Canada Flyer Button Link"
+      }
+    ]
+  }
 {% endschema %}
