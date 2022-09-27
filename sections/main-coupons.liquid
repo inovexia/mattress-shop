@@ -1,21 +1,61 @@
-{% for article in blogs.coupons.articles %}
-  {% assign content = article.content | split: '[/email]' %}
-  <li class="widget-article">
-    <div class="widget-image">
-      <a href="{{ article.url }}">
-        <img src="{{ article.image | article_img_url: 'original' }}" alt="">
-      </a>
-    </div><!-- /.widget-image -->
+<section class="coupons-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          {% render 'left-sidebar' %}
+          
+        </div>
+        <div class="col-12 col-md-9 mt-4 mt-md-0">
+          <div class="flyers-data">
+            <h1 class="main-page-title page-title h0">
+              {{ page.title | escape }}
+            </h1>
+            <div class="page-feat-image">
+                {%- if block.settings.banner_image != blank -%}
+                {{ block.settings.banner_image | image_url: width: 'auto' | image_tag:
+                  loading: 'lazy',
+                  alt: block.settings.feature_icon.alt | escape
+                }}
+              {%- else -%}
+               
+              {{ 'coupons.jpg' | asset_url | img_tag: 'coupons' }}
+              {%- endif -%}
+            </div>
+            {% if page.content != blank %}
+            <div class="coupon-description mt-4">
+                <p>{{ page.content }}</p>
+            </div>
+            {% else %}
+            
+            {% endif %}
+          </div>
+          <div class="coupons">
+            {% for article in blogs.coupons.articles %}
+            {% assign content = article.content | split: '[/email]' %}
+                <div class="row coupons-row">
+                    <div class="col-12 col-md-7">
+                        <div class="coupon-image d-flex h-100 align-items-center justify-content-center">
+                              <img src="{{ article.image | article_img_url: 'original' }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="coupon-content">
+                            <h3 class="coupon-title">{{ article.title }}</h3><!-- /.widget-title -->
+                            <p>
+                              {{ content }}
+                            </p>
+                            <div class="coupon-cta mt-5">
+                                <a href="" class="button-primary-rounded">Start Saving</a>
+                            </div>
+                            
+                          </div>
+                    </div>
+                </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="widget-content">
-      <h3 class="widget-title">{{ article.title }}</h3><!-- /.widget-title -->
-      <p>
-        {% if content[1] %}
-        {{ content[1] | strip_html | truncatewords:15  }}
-        {% else %}
-        {{ content[0] | strip_html | truncatewords:15  }}
-        {% endif %}
-      </p>
-    </div><!-- /.widget-content -->
-  </li><!-- /.widget -->
-  {% endfor %}
+  

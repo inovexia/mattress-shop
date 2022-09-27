@@ -1,0 +1,36 @@
+@media (min-width:0){
+    .coupons-page{
+        padding:50px 0px;
+    }
+    .coupons-page .coupons {
+        margin-top: 50px;
+      }
+      .coupons-row{
+        margin-bottom: 20px;
+        border: 1px solid #f1f3f4;
+        -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border-radius: 15px;
+        padding: 20px;
+      }
+      .coupon-image {
+        padding: 0px 20px;
+      }
+      .coupon-title {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .coupon-cta a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 15px;
+      }
+}
+
+@media (min-width:769px){
+    .coupons-page{
+        padding:75px 0px;
+    }
+}
