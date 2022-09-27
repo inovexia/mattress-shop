@@ -10,6 +10,10 @@
             <h1 class="main-page-title page-title h0">
               {{ page.title | escape }}
             </h1>
+            <div class="header-box flyer-sale-btn">
+                <a href="/pages/current-local-flyer">View Our Current</a>
+                <a aria-current="page" class="" href="/pages/canada-wide-flyer">Canada Wide Flyer</a>
+            </div>
             <div class="page-feat-image">
                 {%- if block.settings.banner_image != blank -%}
                 {{ block.settings.banner_image | image_url: width: 'auto' | image_tag:
@@ -18,15 +22,8 @@
                 }}
               {%- else -%}
                
-              {{ 'mattressville_flyers.jpg' | asset_url | img_tag: 'flyers' }}
+              {{ 'flyer2.jpg' | asset_url | img_tag: 'flyers' }}
               {%- endif -%}
-            </div>
-            <div class="page-content">
-              <p>{{ page.content | escape }}</p>
-            </div>
-            <div class="cta-box">
-              <a href="/pages/current-local-flyer" class="button-primary-rounded">Our Current Flyer</a>
-              <a href="/pages/canada-wide-flyer" class="button-primary-rounded">Canad Wide Flyer</a>
             </div>
           </div>
         </div>

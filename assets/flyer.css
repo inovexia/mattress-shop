@@ -24,6 +24,29 @@ text-align: center;
         padding: 5px 10px;
         font-size: 12px;
       }
+      .flyer-page .header-box {
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #f1f3f4;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border-radius: 15px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        padding: 20px 10px;
+        margin-bottom: 30px;
+      }
+      .header-box.flyer-sale-btn a {
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 500;
+      }
       
 }
 @media (min-width:769px){
@@ -40,5 +63,8 @@ line-height: 28px;
       .flyers-data .cta-box .button-primary-rounded{
         padding: 10px 15px;
         font-size: 16px;
+      }
+      .header-box.flyer-sale-btn a {
+        font-size: 14px;
       }
 }

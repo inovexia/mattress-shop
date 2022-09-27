@@ -1,0 +1,21 @@
+{% for article in blogs.coupons.articles %}
+  {% assign content = article.content | split: '[/email]' %}
+  <li class="widget-article">
+    <div class="widget-image">
+      <a href="{{ article.url }}">
+        <img src="{{ article.image | article_img_url: 'original' }}" alt="">
+      </a>
+    </div><!-- /.widget-image -->
+
+    <div class="widget-content">
+      <h3 class="widget-title">{{ article.title }}</h3><!-- /.widget-title -->
+      <p>
+        {% if content[1] %}
+        {{ content[1] | strip_html | truncatewords:15  }}
+        {% else %}
+        {{ content[0] | strip_html | truncatewords:15  }}
+        {% endif %}
+      </p>
+    </div><!-- /.widget-content -->
+  </li><!-- /.widget -->
+  {% endfor %}
