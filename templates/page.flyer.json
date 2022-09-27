@@ -2,30 +2,14 @@
   "sections": {
     "main": {
       "type": "main-flyer",
-      "blocks": {
-        "current-flyer": {
-          "type": "button",
-          "settings": {
-            "current_flyer_button_text": "Our Current Flyer",
-            "current_flyer_button_link": "/mattress-sale-flyers/"
-          }
-        },
-        "canada-flyer": {
-          "type": "button",
-          "settings": {
-            "canada_flyer_button_text": "Canada Wide Flyer",
-            "canada_flyer_button_link": "/mattress-sale-flyers/"
-          }
-        }
-    },
-    "block_order": [
-      "current-flyer",
-      "canada-flyer"
-    ],
-    "settings": {
-      "main": "Flyer"
+      "settings": {
+        "banner-image": "shopify:\/\/shop_images\/mattressville_flyers.jpg",
+        "current_flyer_button_text": "Our Current Flyer",
+        "current_flyer_button_link": "",
+        "canada_flyer_button_text": "Canada Wide Flyer",
+        "canada_flyer_button_link": ""
+      }
     }
-  }
   },
   "order": [
     "main"
