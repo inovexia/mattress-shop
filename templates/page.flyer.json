@@ -4,8 +4,7 @@
       "type": "main-flyer",
       "settings": {
         "title": "flyers",
-        "default":"Flyer",
-        "type":"text"
+        "default":"Flyer"
       }
     }
   },
