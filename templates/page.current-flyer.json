@@ -1,0 +1,18 @@
+{
+    "sections": {
+      "main": {
+        "type": "current-local-flyer",
+        "settings": {
+          "banner-image": "shopify:\/\/shop_images\/mattressville_flyers.jpg",
+          "current_flyer_button_text": "Our Current Flyer",
+          "current_flyer_button_link": "",
+          "canada_flyer_button_text": "Canada Wide Flyer",
+          "canada_flyer_button_link": ""
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
+  
