@@ -9,6 +9,14 @@
         text-decoration: none;
         color: #535353;
       }
+      .blog-articles-custom .button-primary-rounded{
+        text-decoration: none;
+        padding: 5px 15px;
+        display: inline-block;
+      }
+      .article-card:hover .blog-articles-custom .button-primary-rounded{
+        text-decoration: none;
+      }
 }
 
 @media (min-width:769px){
