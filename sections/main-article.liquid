@@ -45,7 +45,7 @@
             {%- endif -%}
           </header>
 <!-- Add this at the top of your blog template -->
-<div id="table-of-contents"></div>
+
 
 <!-- Add this where you want the actual table of contents to appear -->
 {% if article.content != blank %}
@@ -68,6 +68,7 @@
 {% endif %}
 
         {%- when 'content'-%}
+  <div id="table-of-contents"></div>        
           <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
           </div>
