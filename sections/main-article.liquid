@@ -44,28 +44,6 @@
               </span>
             {%- endif -%}
           </header>
-<!-- Add this at the top of your blog template -->
-<div id="table-of-contents"></div>
-
-<!-- Add this where you want the actual table of contents to appear -->
-{% if article.content != blank %}
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var tocContainer = document.getElementById('table-of-contents');
-      var headings = document.querySelectorAll('.rte h2, .rte h3, .rte h4, .rte h5, .rte h6');
-
-      if (headings.length > 1) {
-        tocContainer.innerHTML = '<h2>Table of Contents</h2><ul>';
-        headings.forEach(function(heading) {
-          var anchor = heading.id ? heading.id : heading.textContent.toLowerCase().replace(/\s+/g, '-');
-          tocContainer.innerHTML += '<li><a href="#' + anchor + '">' + heading.textContent + '</a></li>';
-          heading.id = anchor;
-        });
-        tocContainer.innerHTML += '</ul>';
-      }
-    });
-  </script>
-{% endif %}
 
         {%- when 'content'-%}
           <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
