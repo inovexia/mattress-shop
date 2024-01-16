@@ -1,5 +1,32 @@
 @media (min-width: 0) {
-    
+    /* Add this to your CSS file */
+#table-of-contents {
+  margin: 20px 0;
+}
+
+#table-of-contents h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+#table-of-contents ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#table-of-contents li {
+  margin-left: 10px;
+}
+
+#table-of-contents a {
+  text-decoration: none;
+  color: #333;
+}
+
+#table-of-contents a:hover {
+  text-decoration: underline;
+}
+
       /* Basic Styling */
       :focus-visible {
         outline:none !important;
