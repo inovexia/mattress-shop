@@ -1,4 +1,3 @@
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
@@ -46,17 +45,12 @@
             {%- endif -%}
           </header>
 
+
         {%- when 'content'-%}
-           {% if block.settings.show_toc %}
-            <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
-         {% render 'toc', block : block %}
-  </div>
-         {% else %}
           <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
           </div>
-         {% endif %}
-      
+
         {%- when 'share' -%}
           <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
             <share-button class="share-button" {{ block.shopify_attributes }}>
@@ -356,71 +350,11 @@
         }
       ]
     },
-
-{
+    {
       "type": "content",
       "name": "t:sections.main-article.blocks.content.name",
-      "limit": 1,
-"settings": [
-    {
-      "type": "header",
-      "content": "Table of content"
+      "limit": 1
     },
-    {
-      "type": "checkbox",
-      "id": "show_toc",
-      "label": "Enable",
-      "default": true
-    },
-    {
-      "type": "text",
-      "id": "toc_hd",
-      "label": "Heading",
-      "default": "Table of Content"
-    },
-    {
-      "type": "range",
-      "id": "toc-hd-sz",
-      "label": "Text size",
-      "min": 12,
-      "max": 30,
-      "step": 1,
-      "default": 18
-    },
-    {
-      "type": "color",
-      "id": "toc-ctn-bk",
-      "label": "Background",
-      "default": "#f1f1f1"
-    },
-    {
-      "type": "color",
-      "id": "toc-btn-bk",
-      "label": "button background",
-      "default": "#3fb9fc"
-    },
-    {
-      "type": "color",
-      "id": "toc-btn-txt",
-      "label": "button text",
-      "default": "#FFFFFF"
-    },
-    {
-      "type": "color",
-      "id": "toc-btn-hvr-bk",
-      "label": "button background on hover",
-      "default": "#0E32C7"
-    },
-    {
-      "type": "color",
-      "id": "toc-btn-hvr-txt",
-      "label": "button text on hover",
-      "default": "#FFFFFF"
-    }
-]
-    },
-
-    
     {
       "type": "share",
       "name": "t:sections.main-article.blocks.share.name",
