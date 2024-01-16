@@ -44,7 +44,8 @@
               </span>
             {%- endif -%}
           </header>
-
+<div class="page-width page-width--narrow"> <div id="toc"> <h4 class="h2">Table of Contents</h4> </div> </div>
+  <script> var headers = document.querySelectorAll("#MainContent h2"); headers.forEach(function(header) { header.id = header.textContent.replace(/\s/g, "-").toLowerCase(); heading2 = header.textContent; var tocContainer = document.getElementById("toc"); var anchor = document.createElement('a'); anchor.setAttribute('href', '#' + header.id); anchor.innerText = heading2; tocContainer.appendChild(anchor); }); </script>
 
         {%- when 'content'-%}
           <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
