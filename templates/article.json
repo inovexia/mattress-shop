@@ -15,26 +15,44 @@
             "blog_show_date": true,
             "blog_show_author": false
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "featured_image",
-        "title",
-        "share",
-        "content"
+        "title"
       ],
       "settings": {
+      }
+    },
+    "rich_text_3JR6Rg": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7T7g4w": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_7T7g4w"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_RCgqzq": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- Add this at the top of your blog template -->\n<div id=\"table-of-contents\"><\/div>\n\n<!-- Add this where you want the actual table of contents to appear -->\n{% if article.content != blank %}\n  <script>\n    document.addEventListener('DOMContentLoaded', function() {\n      var tocContainer = document.getElementById('table-of-contents');\n      var headings = document.querySelectorAll('.rte h2, .rte h3, .rte h4, .rte h5, .rte h6');\n\n      if (headings.length > 1) {\n        tocContainer.innerHTML = '<h2>Table of Contents<\/h2><ul>';\n        headings.forEach(function(heading) {\n          var anchor = heading.id ? heading.id : heading.textContent.toLowerCase().replace(\/\\s+\/g, '-');\n          tocContainer.innerHTML += '<li><a href=\"#' + anchor + '\">' + heading.textContent + '<\/a><\/li>';\n          heading.id = anchor;\n        });\n        tocContainer.innerHTML += '<\/ul>';\n      }\n    });\n  <\/script>\n{% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "newsletter_dLzyTw": {
@@ -70,20 +88,12 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "custom_liquid_RCgqzq": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<!-- Add this at the top of your blog template -->\n<div id=\"table-of-contents\"><\/div>\n\n<!-- Add this where you want the actual table of contents to appear -->\n{% if article.content != blank %}\n  <script>\n    document.addEventListener('DOMContentLoaded', function() {\n      var tocContainer = document.getElementById('table-of-contents');\n      var headings = document.querySelectorAll('.rte h2, .rte h3, .rte h4, .rte h5, .rte h6');\n\n      if (headings.length > 1) {\n        tocContainer.innerHTML = '<h2>Table of Contents<\/h2><ul>';\n        headings.forEach(function(heading) {\n          var anchor = heading.id ? heading.id : heading.textContent.toLowerCase().replace(\/\\s+\/g, '-');\n          tocContainer.innerHTML += '<li><a href=\"#' + anchor + '\">' + heading.textContent + '<\/a><\/li>';\n          heading.id = anchor;\n        });\n        tocContainer.innerHTML += '<\/ul>';\n      }\n    });\n  <\/script>\n{% endif %}",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "main",
-    "newsletter_dLzyTw",
-    "custom_liquid_RCgqzq"
+    "rich_text_3JR6Rg",
+    "custom_liquid_RCgqzq",
+    "newsletter_dLzyTw"
   ]
 }
