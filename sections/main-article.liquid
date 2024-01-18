@@ -50,18 +50,13 @@
                   {%- endif -%}
                 </header>
       
-        {%- when 'content'-%}
-           {% if block.settings.show_toc %}
+
+
+              {%- when 'content'-%}
             <div class="article-template__content container rte" itemprop="articleBody" {{ block.shopify_attributes }}>
-         {% render 'toc', block : block %}
-            </div>
-         {% else %}
-          <div class="article-template__content container rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+              {% render 'toc', block : block %}
               {{ article.content }}
-          </div>
-         {% endif %}
-
-
+                </div>
 
         
               {%- when 'share' -%}
