@@ -52,7 +52,7 @@
       
         {%- when 'content'-%}
            {% if block.settings.show_toc %}
-            <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+            <div class="article-template__content container rte" itemprop="articleBody" {{ block.shopify_attributes }}>
          {% render 'toc', block : block %}
             </div>
          {% else %}
