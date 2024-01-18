@@ -1,12 +1,38 @@
+<!-- File: sections/custom-toc.liquid -->
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Table of Contents",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Table of Contents Settings"
+    },
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "toc_title",
+      "default": "Table of Contents"
+    },
+    {
+      "type": "color",
+      "label": "Background Color",
+      "id": "toc_background_color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "label": "Text Color",
+      "id": "toc_text_color",
+      "default": "#333333"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Table of Contents",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
