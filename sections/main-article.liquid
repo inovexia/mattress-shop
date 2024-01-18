@@ -362,10 +362,67 @@
         }
       ]
     },
-    {
+{
       "type": "content",
       "name": "t:sections.main-article.blocks.content.name",
-      "limit": 1
+      "limit": 1,
+"settings": [
+    {
+      "type": "header",
+      "content": "Table of content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_toc",
+      "label": "Enable",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "toc_hd",
+      "label": "Heading",
+      "default": "Table of Content"
+    },
+    {
+      "type": "range",
+      "id": "toc-hd-sz",
+      "label": "Text size",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "toc-ctn-bk",
+      "label": "Background",
+      "default": "#f1f1f1"
+    },
+    {
+      "type": "color",
+      "id": "toc-btn-bk",
+      "label": "button background",
+      "default": "#3fb9fc"
+    },
+    {
+      "type": "color",
+      "id": "toc-btn-txt",
+      "label": "button text",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "toc-btn-hvr-bk",
+      "label": "button background on hover",
+      "default": "#0E32C7"
+    },
+    {
+      "type": "color",
+      "id": "toc-btn-hvr-txt",
+      "label": "button text on hover",
+      "default": "#FFFFFF"
+    }
+]
     },
     {
       "type": "share",
