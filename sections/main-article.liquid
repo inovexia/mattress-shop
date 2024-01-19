@@ -54,25 +54,14 @@
           {%- endif -%}
         </header>
 
-        {{ block.settings.section_html }}
       {%- when 'content' -%}
-        {% if block.settings.show_toc %}
-          <div
-            class="article-template__content page-width page-width--narrow rte"
-            itemprop="articleBody"
-            {{ block.shopify_attributes }}
-          >
-            {% render 'toc', block: block %}
-          </div>
-        {% else %}
-          <div
-            class="article-template__content page-width page-width--narrow rte"
-            itemprop="articleBody"
-            {{ block.shopify_attributes }}
-          >
-            {{ article.content }}
-          </div>
-        {% endif %}
+        <div
+          class="article-template__content page-width page-width--narrow rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          itemprop="articleBody"
+          {{ block.shopify_attributes }}
+        >
+          {{ article.content }}
+        </div>
 
       {%- when 'share' -%}
         <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
@@ -350,20 +339,6 @@
   "tag": "section",
   "class": "section",
   "blocks": [
-
-{
-"name": "custom liquid",
-"type": "custom_liquid",
-"settings": [
-{
-"type": "liquid",
-"id": "custom_liquid",
-"label": "t:sections.custom-liquid.settings.custom_liquid.label",
-"info": "t:sections.custom-liquid.settings.custom_liquid.info"
-}
-]
-},
-
     {
       "type": "@app"
     },
